@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Installing Ubuntu on a PS3</title>
+
+    <link rel="stylesheet" href="/javascripts/galleria/themes/folio/galleria.folio.css">
+    <link rel="stylesheet" href="/javascripts/galleria/themes/classic/galleria.classic.css">
+    <link href="../stylesheets/layout_dark.css" rel="stylesheet" />
+  </head>
+
+  <body class="article article_ubuntu-ps3">
+    <div class="container_12">
+
+        <div class="grid_9 prefix_3 bb" id="header">
+            <a href="/"></a>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="left_sidebar" class="grid_3 box txt_right">
+            <ul id="menu" class="bb">
+                <li class=""><a href="/">Home</a></li>
+                <li class=""><a href="/photos.html">Photos</a></li>
+                <li class=""><a href="/projects.html">Projects</a></li>
+                <li class=""><a href="/about.html">About</a></li>
+            </ul>
+            <ul id="sub_menu">
+                <li>Contact: <a href="mailto:reefab@demenzia.net">reefab@demenzia.net</a></li>
+            </ul>
+        </div>
+
+    <div class="grid_2 alpha">
+        <ul class="project-sidebar">
+        <li>Author: <span>Fabien Piuzzi</span></li>
+            <li>Published: <span> 1 Jan 2008</span></li>
+            <li>Tags:
+                <ul class="tags">
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <article class="grid_7 omega article">
+        <h1 id="ubuntu-on-ps3">Ubuntu on PS3</h1>
+
+<p>A quick article showing how to install Ubuntu on a first gen PS3.
+This is obsolete as this feature was removed.</p>
+
+<p></p>
+
+<p>Note: Running linux on a playstation 3 is not a hack, it doesn't require any hardware modification,
+won't disable any feature on your Playstation 3 and is not difficult to do.</p>
+
+<p>Sony officially support running linux on your ps3 with dedicated
+tools present in the XMB ( Cross-mediabar, the UI of the Playstation 3).</p>
+
+<p><em>Caveat: for installing Linux, you will need to format your hard-drive thus
+losing all the data on it. Fortunately, Sony made a backup utility so you can
+backup your game's save data, game demos and other files very simply.</em> ###
+What's needed?</p>
+
+<ul>
+  <li>A CD-R ( or DVD-R, I used a DVR-RW ).</li>
+  <li>USB Keyboard and mouse.</li>
+  <li>USB drive or memory card if you want to backup your data beforehand.</li>
+  <li>Component or HDMI cable if you plan on using the linux GUI ( ie, not use
+your Playstation 3 as a headless server ). As you can see, the Playstation
+3 doesn't require any special hardware to use linux as the Playstation 2
+did.</li>
+</ul>
+
+<h3 id="ubuntu-install">Ubuntu Install</h3>
+
+<p>First, you have to download an iso image of Ubuntu for your
+PS3. You can get it there :</p>
+
+<p><code>http://cdimage.ubuntu.com/custom/20070608-feisty-ps3/ubuntu-7.04-desktop-powerpc+ps3.iso</code></p>
+
+<p>While it's downloading, it's now a good time to backup your data if you'd like
+to. Plug in a usb-hardrive or a memory card and: In the XMB, go to Settings -&gt;
+System Settings -&gt; Backup Utility, follow the on-screen instructions.</p>
+
+<p>Once the backup is done and the image has been burned on a CD/DVD, go back to the XMB,
+and then:</p>
+
+<ul>
+  <li>Settings &gt; System Settings &gt; Format Utility &gt; Format Hard Disk.</li>
+  <li>Choose Yes.</li>
+  <li>Select "Custom partition setting" and then "Allot 10GB to the Other
+OS"</li>
+  <li>followed by "Perform a Quick Format."</li>
+  <li>Reboot the PS3 by pressing X on your
+controller. You can now insert the Ubuntu CD on your Playstation 3</li>
+  <li>Settings &gt; System Settings &gt; Install Other OS Hit X
+when prompted to start the installer. This step actually install a bootloader
+on your system from the CD, it doesn't install the other operating system.</li>
+  <li>Next, Settings &gt; System Settings &gt; Default System, select "Other OS" and
+reboot.</li>
+</ul>
+
+<p>Don't forget to plug in your keyboard and mouse. You will then see a
+command prompt <code>kboot:</code> on the screen, just press enter to boot from the CD.</p>
+
+<p>From now on, it's a normal Ubuntu install, just click on the installer on the
+desktop, select the 10GB drive and wait, and then wait some more.</p>
+
+<p>The installation is quite slow, much slower than on a comparable computer (I blame
+the blu-ray drive).</p>
+
+<p><em>Caveat: if you are not using the HDMI output on a HDCP
+compatible screen, the live CD is going to default to NTSC/PAL resolution.
+Basically, the screen resolution will be too low for the installer application
+to display all of its window. Just press the "ALT" key on your keyboard and
+drag the window with the mouse to access the buttons on the lower side of the
+window.</em></p>
+
+<p>After the installation finished and I rebooted into my ubuntu system,
+I had to make some configuration modification to display a decent resolution
+over Component cables.</p>
+
+    </article>
+<footer class="clearfix">
+    <span>® 2001-2012 Fabien Piuzzi</span>
+    <span class="txtright">Made with <a href="http://middlemanapp.com">Middleman</a></span>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/javascripts/all.js"></script>
+</body>
+</html>
+
